@@ -1,0 +1,51 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environment
+lane_analytics/venv/
+venv/
+.venv/
+env/
+
+# ── Data / output ─────────────────────────────────────────────────────────────
+lane_analytics/data/source_video.mp4
+lane_analytics/data/telemetry_output.parquet
+lane_analytics/data/*.parquet
+
+# Keep the calibration cache and data directory itself
+!lane_analytics/data/.gitkeep
+!lane_analytics/data/calibration_cache.json
+
+# ── Node / Frontend ───────────────────────────────────────────────────────────
+node_modules/
+lane_analytics/frontend/node_modules/
+lane_analytics/frontend/dist/
+lane_analytics/frontend/.env
+lane_analytics/frontend/.env.local
+lane_analytics/frontend/.env.*.local
+
+# Vite build artefacts
+*.local
+
+# ── IDE / Editor ──────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ── Misc ─────────────────────────────────────────────────────────────────────
+ws_test.py
+/tmp/
+*.log
